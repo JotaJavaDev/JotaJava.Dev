@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JotaJava.dev | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050505;
+      --green: #39ff14;
+      --green-soft: rgba(57,255,20,0.2);
+      --text: #e5e5e5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: var(--green);
+      font-size: 3rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .card {
+      border: 1px solid var(--green-soft);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      background: linear-gradient(145deg, #070707, #020202);
+    }
+
+    .card h2 {
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      border: 1px solid var(--green-soft);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .project a {
+      color: var(--green);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      opacity: 0.6;
+      border-top: 1px solid var(--green-soft);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JotaJava.dev</h1>
+    <p>Java | Projetos | Conteúdo Técnico</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>Sobre mim</h2>
+      <p>Desenvolvedor Java focado em código limpo, boas práticas e soluções eficientes. Compartilho conhecimento e construo projetos reais com Java.</p>
+    </div>
+
+    <div class="card">
+      <h2>Projetos</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Calculadora Java</h3>
+          <p>Aplicação simples para praticar lógica e estrutura.</p>
+          <a href="#">Ver no GitHub</a>
+        </div>
+        <div class="project">
+          <h3>Sistema de Login</h3>
+          <p>Login com validação e organização em camadas.</p>
+          <a href="#">Ver no GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Contato</h2>
+      <p>Instagram: @JotaJava.dev</p>
+      <p>GitHub: github.com/jotajava</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 - JotaJava.dev
+  </footer>
+
+</body>
+</html>
